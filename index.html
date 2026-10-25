@@ -1,0 +1,558 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+
+  <meta
+    name="viewport"
+    content="width=device-width, initial-scale=1.0"
+  />
+
+  <meta
+    name="description"
+    content="Site da Hamburgueria Estação Norte, uma casa tradicional da Zona Norte de São Paulo."
+  />
+
+  <title>Estação Norte | Hamburgueria Tradicional</title>
+
+  <!-- Fontes -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+
+  <link
+    rel="preconnect"
+    href="https://fonts.gstatic.com"
+    crossorigin
+  />
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet"
+  />
+
+  <!-- Ícones -->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+  />
+
+  <!-- Estilos do site -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <header class="header" id="inicio">
+    <nav class="navbar container">
+      <a
+        href="#inicio"
+        class="logo"
+        aria-label="Estação Norte — início"
+      >
+        <span class="logo-icon">
+          <img
+            src="Logo - Estação Norte.jpg"
+            alt="Logo da Estação Norte"
+          />
+        </span>
+
+        <span>
+          ESTAÇÃO <strong>NORTE</strong>
+        </span>
+      </a>
+
+      <button
+        class="menu-toggle"
+        type="button"
+        aria-label="Abrir menu"
+        aria-expanded="false"
+        aria-controls="menu-navegacao"
+      >
+        <i class="fa-solid fa-bars" aria-hidden="true"></i>
+      </button>
+
+      <ul class="nav-links" id="menu-navegacao">
+        <li>
+          <a href="#historia">Nossa história</a>
+        </li>
+
+        <li>
+          <a href="#cardapio">Cardápio</a>
+        </li>
+
+        <li>
+          <a href="#Quem_Aprova">Quem aprova</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Apresentação -->
+    <section class="hero">
+      <div class="hero-overlay"></div>
+
+      <div class="hero-content container reveal">
+        <span class="eyebrow">
+          Tradição desde 1987
+        </span>
+
+        <h1>
+          O sabor da Zona Norte<br />
+          <em>feito na brasa.</em>
+        </h1>
+
+        <p>
+          Hambúrgueres artesanais, ingredientes selecionados e
+          receitas que atravessam gerações.
+        </p>
+
+        <div class="hero-actions">
+          <a href="#cardapio" class="button button-primary">
+            Conheça o cardápio
+          </a>
+
+          <a href="#historia" class="button button-outline">
+            Nossa história
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Diferenciais -->
+    <section class="features">
+      <div class="container features-grid">
+        <article>
+          <i
+            class="fa-solid fa-fire-flame-curved"
+            aria-hidden="true"
+          ></i>
+
+          <div>
+            <strong>Grelhado na brasa</strong>
+            <span>Sabor defumado de verdade</span>
+          </div>
+        </article>
+
+        <article>
+          <i
+            class="fa-solid fa-drumstick-bite"
+            aria-hidden="true"
+          ></i>
+
+          <div>
+            <strong>Carne selecionada</strong>
+            <span>Carne fresca preparada na casa</span>
+          </div>
+        </article>
+
+        <article>
+          <i
+            class="fa-solid fa-seedling"
+            aria-hidden="true"
+          ></i>
+
+          <div>
+            <strong>Ingredientes frescos</strong>
+            <span>Qualidade em cada camada</span>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- História -->
+    <section class="history section" id="historia">
+      <div class="container history-grid">
+        <div class="history-image reveal">
+          <!-- Insira o caminho da imagem da hamburgueria -->
+          <img
+            src="Estrutura_Estação_Norte.jpg"
+            alt="Interior acolhedor de uma hamburgueria tradicional"
+          />
+
+          <div class="year-card">
+            <strong>1987</strong>
+            <span>onde tudo começou</span>
+          </div>
+        </div>
+
+        <div class="history-content reveal">
+          <span class="section-kicker">
+            Nossa história
+          </span>
+
+          <h2>
+            Uma casa de bairro com
+            <em>alma paulistana.</em>
+          </h2>
+
+          <p>
+            A Estação Norte nasceu de uma pequena chapa,
+            receitas de família e da vontade de reunir a
+            vizinhança em torno de comida feita com cuidado.
+          </p>
+
+          <p>
+            Nossa proposta combina receitas clássicas,
+            ingredientes bem escolhidos e cuidado em cada
+            preparo. Do pão à carne no ponto, dos molhos da
+            casa ao atendimento, queremos fazer do simples
+            algo que dá vontade de repetir.
+          </p>
+
+          <blockquote>
+            “A gente não precisa de luxo quando tem bons momentos.”
+            <cite>Fernando Grilo</cite>
+          </blockquote>
+        </div>
+      </div>
+    </section>
+
+    <!-- Cardápio -->
+    <section class="menu-section section" id="cardapio">
+      <div class="container">
+        <div class="section-heading reveal">
+          <span class="section-kicker">
+            Favoritos da casa
+          </span>
+
+          <h2>
+            Hambúrgueres que fazem
+            <em>história.</em>
+          </h2>
+
+          <p>
+            Conheça algumas das receitas mais pedidas da Estação Norte.
+          </p>
+        </div>
+
+        <!-- Os cards são preenchidos pelo script.js -->
+        <div class="menu-grid" id="menu-grid"></div>
+      </div>
+    </section>
+
+    <!-- Quem aprova -->
+<section class="visit section" id="Quem_Aprova">
+  <div class="container">
+
+    <!-- Mesmo cabeçalho utilizado no cardápio -->
+    <div class="section-heading reveal">
+      <span class="section-kicker">
+        Quem aprova
+      </span>
+
+      <h2>
+        São milhares de clientes que já provaram o <em>Estação Norte</em> e voltaram!
+        
+      </h2>
+
+      <p>
+        Conheça algumas das nossas avaliações nas redes sociais!
+      </p>
+    </div>
+
+    <!-- Painel de avaliações e comentários -->
+<div class="visit-card reviews-panel reveal">
+
+  <!-- Coluna esquerda: resumo das avaliações -->
+  <div
+    class="ratings-column"
+    aria-label="Resumo demonstrativo das avaliações"
+  >
+    <div class="ratings-summary">
+      <div class="ratings-total">
+        <span>+</span>16 mil
+      </div>
+
+      <h3>Avaliações 5 estrelas</h3>
+
+      <div class="rating-stars" aria-label="5 de 5 estrelas">
+        <i class="fa-solid fa-star" aria-hidden="true"></i>
+        <i class="fa-solid fa-star" aria-hidden="true"></i>
+        <i class="fa-solid fa-star" aria-hidden="true"></i>
+        <i class="fa-solid fa-star" aria-hidden="true"></i>
+        <i class="fa-solid fa-star" aria-hidden="true"></i>
+      </div>
+
+      <p>Somando Google e iFood em todas as unidades</p>
+    </div>
+
+    <div class="ratings-platforms">
+
+      <!-- Google -->
+      <div class="platform-card">
+        <span class="platform-brand platform-google">
+          <i class="fa-brands fa-google" aria-hidden="true"></i>
+          <span class="reviews-sr-only">Google</span>
+        </span>
+
+        <strong class="platform-score">4,8</strong>
+
+        <span class="platform-label">No Google</span>
+
+        <!-- Substitua por um link quando houver avaliações reais -->
+        <span class="platform-demo">Dados ilustrativos</span>
+      </div>
+
+      <!-- iFood -->
+      <div class="platform-card">
+        <span class="platform-brand platform-ifood">
+          iFood
+        </span>
+
+        <strong class="platform-score">4,8</strong>
+
+        <span class="platform-label">No iFood</span>
+
+        <!-- Substitua por um link quando houver avaliações reais -->
+        <span class="platform-demo">Dados ilustrativos</span>
+      </div>
+
+    </div>
+
+    <p class="ratings-disclaimer">
+      Números demonstrativos, sem vínculo com avaliações reais.
+    </p>
+  </div>
+
+  <!-- Coluna direita: comentários fictícios -->
+  <div class="testimonials-column">
+    <div class="testimonials-heading">
+      <span class="section-kicker">
+        Experiências à mesa
+      </span>
+
+      <h3>Quem prova, quer voltar.</h3>
+
+      <p>
+        Comentários fictícios para demonstração do layout.
+      </p>
+    </div>
+
+    <div class="testimonials-grid">
+
+      <!-- Comentário 1 -->
+      <article class="testimonial-card">
+        <div class="testimonial-author">
+          <span class="testimonial-avatar" aria-hidden="true">
+            MC
+          </span>
+
+          <div>
+            <h4>Mariana Costa</h4>
+            <span>Cliente fictícia</span>
+          </div>
+        </div>
+
+        <div class="testimonial-stars" aria-label="5 de 5 estrelas">
+          <i class="fa-solid fa-star" aria-hidden="true"></i>
+          <i class="fa-solid fa-star" aria-hidden="true"></i>
+          <i class="fa-solid fa-star" aria-hidden="true"></i>
+          <i class="fa-solid fa-star" aria-hidden="true"></i>
+          <i class="fa-solid fa-star" aria-hidden="true"></i>
+        </div>
+
+        <blockquote>
+          “O hambúrguer chegou no ponto perfeito, com aquele
+          gostinho de brasa. A maionese da casa é maravilhosa!”
+        </blockquote>
+      </article>
+
+      <!-- Comentário 2 -->
+      <article class="testimonial-card">
+        <div class="testimonial-author">
+          <span class="testimonial-avatar" aria-hidden="true">
+            RL
+          </span>
+
+          <div>
+            <h4>Rafael Lima</h4>
+            <span>Cliente fictício</span>
+          </div>
+        </div>
+
+        <div class="testimonial-stars" aria-label="5 de 5 estrelas">
+          <i class="fa-solid fa-star" aria-hidden="true"></i>
+          <i class="fa-solid fa-star" aria-hidden="true"></i>
+          <i class="fa-solid fa-star" aria-hidden="true"></i>
+          <i class="fa-solid fa-star" aria-hidden="true"></i>
+          <i class="fa-solid fa-star" aria-hidden="true"></i>
+        </div>
+
+        <blockquote>
+          “Ambiente acolhedor e atendimento muito atencioso.
+          Pedi o Bacon da Casa e já quero voltar para experimentar os outros.”
+        </blockquote>
+      </article>
+
+      <!-- Comentário 3 -->
+      <article class="testimonial-card">
+        <div class="testimonial-author">
+          <span class="testimonial-avatar" aria-hidden="true">
+            BA
+          </span>
+
+          <div>
+            <h4>Beatriz Almeida</h4>
+            <span>Cliente fictícia</span>
+          </div>
+        </div>
+
+        <div class="testimonial-stars" aria-label="5 de 5 estrelas">
+          <i class="fa-solid fa-star" aria-hidden="true"></i>
+          <i class="fa-solid fa-star" aria-hidden="true"></i>
+          <i class="fa-solid fa-star" aria-hidden="true"></i>
+          <i class="fa-solid fa-star" aria-hidden="true"></i>
+          <i class="fa-solid fa-star" aria-hidden="true"></i>
+        </div>
+
+        <blockquote>
+          “Adorei a opção vegetariana! Ingredientes frescos,
+          pão delicioso e uma combinação de sabores que surpreendeu.”
+        </blockquote>
+      </article>
+
+      <!-- Comentário 4 -->
+      <article class="testimonial-card">
+        <div class="testimonial-author">
+          <span class="testimonial-avatar" aria-hidden="true">
+            FN
+          </span>
+
+          <div>
+            <h4>Felipe Nunes</h4>
+            <span>Cliente fictício</span>
+          </div>
+        </div>
+
+        <div class="testimonial-stars" aria-label="5 de 5 estrelas">
+          <i class="fa-solid fa-star" aria-hidden="true"></i>
+          <i class="fa-solid fa-star" aria-hidden="true"></i>
+          <i class="fa-solid fa-star" aria-hidden="true"></i>
+          <i class="fa-solid fa-star" aria-hidden="true"></i>
+          <i class="fa-solid fa-star" aria-hidden="true"></i>
+        </div>
+
+        <blockquote>
+          “O Duplo da Casa é sensacional. Bem servido,
+          queijo derretido e bacon crocante. Virou meu pedido favorito!”
+        </blockquote>
+      </article>
+
+    </div>
+  </div>
+
+</div>
+
+  </div>
+</section>
+  </main>
+
+  <!-- Novo rodapé -->
+  <footer class="footer">
+    <div class="container footer-content">
+      <!-- Coluna esquerda: marca, endereço e horário -->
+      <div class="footer-brand">
+        <a
+          href="#inicio"
+          class="logo footer-logo"
+          aria-label="Estação Norte — voltar ao início"
+        >
+          <span class="logo-icon">
+            <img
+              src="Logo - Estação Norte.jpg"
+              alt="Logo da Estação Norte"
+            />
+          </span>
+
+          <span class="footer-logo-text">
+            ESTAÇÃO <strong>NORTE</strong>
+          </span>
+        </a>
+
+        <div class="footer-info">
+          <address class="footer-info-item">
+            <i
+              class="fa-solid fa-location-dot"
+              aria-hidden="true"
+            ></i>
+
+            <span>
+              Rua Estação do Norte, 287 — Santana,<br />
+              São Paulo — SP, CEP 02000-000.
+            </span>
+          </address>
+
+          <p class="footer-info-item">
+            <i
+              class="fa-regular fa-clock"
+              aria-hidden="true"
+            ></i>
+
+            <span>
+              Terça a domingo, das 18h às 23h30
+            </span>
+          </p>
+        </div>
+      </div>
+
+      <!-- Coluna direita: descrição e certificações -->
+      <div class="footer-certifications">
+        <p class="footer-description">
+          Nossas principais certificações:
+        </p>
+
+        <div
+          class="certifications-grid"
+          role="group"
+          aria-label="Certificações da hamburgueria"
+        >
+          <div class="certification-card">
+            <!-- Substitua pelo arquivo da primeira certificação -->
+            <img
+              src="ISO22000.png"
+              alt="Certificação 1 da hamburgueria"
+              loading="lazy"
+            />
+          </div>
+
+          <div class="certification-card">
+            <!-- Substitua pelo arquivo da segunda certificação -->
+            <img
+              src="Selo_ReclameAqui.png"
+              alt="Certificação 2 da hamburgueria"
+              loading="lazy"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      © <span id="current-year"></span>
+      Estação Norte. Projeto demonstrativo.
+    </div>
+  </footer>
+
+  <!-- Música ambiente -->
+  <audio
+    id="musica-ambiente"
+    controls
+    autoplay
+    loop
+    preload="metadata"
+  >
+    <source
+      src="Corner Table with Muted Trumpet.mp3"
+      type="audio/mpeg"
+    />
+
+    Seu navegador não suporta reprodução de áudio.
+  </audio>
+
+  <!-- Sombra que acompanha o mouse -->
+  <div id="cursor-shadow" aria-hidden="true"></div>
+
+  <script src="script.js"></script>
+
+  <script src="script.js"></script>
+</body>
+</html>
