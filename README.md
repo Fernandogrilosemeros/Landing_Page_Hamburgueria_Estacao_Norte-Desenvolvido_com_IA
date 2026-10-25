@@ -1,4 +1,3 @@
-# Landing_Page_Hamburgueria_Estacao_Norte-Desenvolvido_com_IA
 # 🍔 Estação Norte — Landing Page com IA
 
 Site demonstrativo de uma hamburgueria fictícia, desenvolvido com auxílio de inteligência artificial. 🤖
@@ -8,13 +7,12 @@ Site demonstrativo de uma hamburgueria fictícia, desenvolvido com auxílio de i
 - HTML
 - CSS
 - JavaScript
-- Google Fonts e Font Awesome
 
 ## ✨ Funcionalidades
 
 - 📱 Layout responsivo e menu para celular.
 - 🍔 Cardápio gerado com JavaScript.
-- 🔥 Animações de rolagem, sombra no cursor e efeito de fogo no título.
+- 🔥 Animação de sombra no cursor 
 - ⭐ Avaliações e comentários fictícios.
 - 📍 Rodapé com endereço, horário e imagens de certificações.
 - 🎵 Player de música ambiente.
